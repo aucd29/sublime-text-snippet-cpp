@@ -5,6 +5,14 @@
 
 #if ENABLE(OBIGO_APPLICATION_MANAGER)
 
+#include <wtf/PassRefPtr.h>
+
+#include "bindings/v8/ExceptionMessages.h"
+#include "bindings/v8/ExceptionState.h"
+
+#include "core/dom/ExceptionCode.h"
+
+
 namespace WebCore {
 
 PassRefPtr<${1}> ${1}::create() {

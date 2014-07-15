@@ -1,0 +1,27 @@
+<snippet>
+	<description>#include "…"</description>
+    <content><![CDATA[#include "${1:${TM_FILENAME/\..+$//}}.h"
+
+#if ENABLE(OBIGO_APPLICATION_MANAGER)
+
+namespace WebCore {
+
+PassRefPtr<${1}> ${1}::create() {
+  return adoptRef(new ${1}());
+}
+
+${1}::${1}() {
+
+}
+
+${1}::~${1}() {
+
+}
+
+} // namespace WebCore
+
+#endif // ENABLE(OBIGO_APPLICATION_MANAGER)
+]]></content>
+    <tabTrigger>cppambase</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

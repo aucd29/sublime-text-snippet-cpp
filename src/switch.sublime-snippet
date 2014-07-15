@@ -1,0 +1,9 @@
+<snippet>
+	<description>Switch Condition</description>
+    <content><![CDATA[switch (${1:}) {
+case ${0:}:
+  break;
+}]]></content>
+    <tabTrigger>switch</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

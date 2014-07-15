@@ -1,0 +1,10 @@
+<snippet>
+	<description>bigcmt</description>
+    <content><![CDATA[///////////////////////////////////////////////////////////////////
+//
+// ${1:}
+//
+///////////////////////////////////////////////////////////////////]]></content>
+    <tabTrigger>bigcmt</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

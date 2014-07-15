@@ -1,0 +1,7 @@
+<snippet>
+	<description>#if $val #endif</description>
+    <content><![CDATA[#if ${1:SYMBOL}
+#endif // ${1:} ]]></content>
+    <tabTrigger>ifdef</tabTrigger>
+    <scope>source.c, source.c++, source.objc, source.objc++</scope>
+</snippet>

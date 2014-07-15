@@ -1,4 +1,4 @@
-sublime-text-snippet
+sublime-text-snippet-cpp
 ====================
 
 for cpp programming with sublime text 2 

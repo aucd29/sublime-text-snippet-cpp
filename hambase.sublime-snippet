@@ -12,7 +12,7 @@
 
 namespace WebCore {
 
-class ${2:${TM_FILENAME/\..+$//}} {
+class ${2:${TM_FILENAME/\..+$//}} : public RefCounted<${2}>, public ScriptWrappable {
 public:
   static PassRefPtr<${2}> create();
   virtual ~${2}();

@@ -1,0 +1,34 @@
+<snippet>
+	<description>#include "…"</description>
+    <content><![CDATA[#include "${2:${TM_FILENAME/\..+$/.h/}}"
+
+namespace ${1:} {
+
+std::auto_ptr<${3:${TM_FILENAME/\..+$//}}> ${3}::instance_;
+
+${3}::${3}() {
+
+}
+
+${3}::~${3}() {
+
+}
+
+${3}* ${3}::getInstance() {
+  if (instance_.get() == NULL) {
+    instance_.reset(new ${3}());
+  }
+
+  return instance_.get();
+}
+
+void ${3}::release() {
+  if (instance_.get()) {
+    instance_.reset();
+  }
+}
+
+} // namespace  ${1:} ]]></content>
+    <tabTrigger>cppsbase</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

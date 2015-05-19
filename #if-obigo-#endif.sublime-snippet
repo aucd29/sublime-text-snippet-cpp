@@ -1,0 +1,8 @@
+<snippet>
+	<description>#if defined(USE_OBIGO_AMS) #endif</description>
+    <content><![CDATA[#if defined(USE_OBIGO_AMS)
+#else
+#endif]]></content>
+    <tabTrigger>ifobigo</tabTrigger>
+    <scope>source.c, source.c++, source.objc, source.objc++</scope>
+</snippet>
